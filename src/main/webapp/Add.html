@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trainee Details</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 50%;
+  }
+
+  td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+
+  input[type="text"],
+  input[type="radio"],
+  select {
+    width: 50%;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing:border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<form action="TDBServlet">
+  <table>
+    <tr>
+      <td colspan="2">
+        <h1>Enter Trainee Details</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>Trainee Id</td>
+      <td><input type="text" name="trnid"></td>
+    </tr>
+    <tr>
+      <td>Trainee Name</td>
+      <td><input type="text" name="trnname"></td>
+    </tr>
+    <tr>
+      <td>Trainee Location</td>
+      <td>
+        <input type="radio" value="Chennai" name="trnlocation">Chennai
+        <input type="radio" value="Bangalore" name="trnlocation">Bangalore
+        <input type="radio" value="Pune" name="trnlocation">Pune
+        <input type="radio" value="Mumbai" name="trnlocation">Mumbai
+      </td>
+    </tr>
+    <tr>
+      <td>Trainee Domain</td>
+      <td>
+        <select name="trndomain">
+          <option>JEE</option>
+          <option>.Net</option>
+          <option>Mainframe</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <input type="submit" value="Add Trainee" name="action">
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>

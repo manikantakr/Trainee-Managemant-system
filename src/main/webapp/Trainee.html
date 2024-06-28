@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trainee Management System</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+
+  .my-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .my-button:hover {
+    background-color: #45a049; /* Darker green */
+  }
+
+  .logout-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .logout-button:hover {
+    background-color: #d32f2f; /* Darker red */
+  }
+</style>
+</head>
+<body>
+
+<h1>Trainee Management System</h1>
+
+<table border="1">
+  <tr>
+    <th>Pick your operation</th>
+  </tr>
+  <tr>
+    <td><a href="Add.html" class="my-button">Add a trainee</a></td>
+  </tr>
+  <tr>
+    <td><a href="Delete.jsp" class="my-button">Delete a trainee</a></td>
+  </tr>
+  <tr>
+    <td><a href="Modify.jsp" class="my-button">Modify a trainee</a></td>
+  </tr>
+  <tr>
+    <td><a href="Retrieve.jsp" class="my-button">Retrieve a trainee</a></td>
+  </tr>
+  <tr>
+    <td><a href="/TraineeManagementSystemProject/TDBServlet?action=List" class="my-button">Retrieve all trainees</a></td>
+  </tr>
+</table>
+
+<a href="index.html" class="logout-button">Logout</a>
+
+</body>
+</html>
